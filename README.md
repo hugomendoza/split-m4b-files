@@ -6,7 +6,6 @@ Este proyecto proporciona un script de Bash para dividir archivos de audiolibros
 
 - **Detección Automática de Capítulos**: Utiliza `ffprobe` para identificar los puntos de inicio y fin de cada capítulo.
 - **División sin Recodificación**: Usa `ffmpeg` con `-c copy` para dividir el audio sin perder calidad y de manera muy rápida.
-- **Nombres de Archivo Inteligentes**: Genera archivos con el formato `TituloDelLibro-001.m4b`, `TituloDelLibro-002.m4b`, etc.
 - **Modo Interactivo**: Si no especificas el archivo al ejecutar, el script te preguntará por la ruta.
 
 ## Requisitos previos
@@ -38,6 +37,13 @@ sudo apt install ffmpeg
 
     ```bash
     ./split_m4b_files.sh
+    # El script te pedirá que introduzcas la ruta
+    ```
+
+    **Opción C: Desde la terminal de Linux**
+
+    ```bash
+    bash split_m4b_files.sh
     # El script te pedirá que introduzcas la ruta
     ```
 
